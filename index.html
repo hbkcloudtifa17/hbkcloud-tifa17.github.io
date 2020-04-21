@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>b言b语</title>
+    <title>响说啥都行</title>
     <!-- <link rel="shortcut icon" href="./favicon.ico" /> -->
     <link type="text/css" rel="stylesheet" href="https://at.alicdn.com/t/font_1755564_z4mhxbw13mq.css"></link>
     <link href="https://fonts.loli.net/css?family=Noto+Serif+SC:200,300,900&display=swap&subset=chinese-simplified" rel="stylesheet">
@@ -15,22 +15,22 @@
     <meta name="google" content="index,follow" />
     <meta name="googlebot" content="index,follow" />
     <meta name="verify" content="index,follow" />
-    <meta name="apple-mobile-web-app-title" content="b言b语">
+    <meta name="apple-mobile-web-app-title" content="响说啥都行">
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 </head>
 
 <body>
     <header id="header">
-        <h1>b言b语</h1>
+        <h1>响说啥都行</h1>
     </header>
     <main id="app">
         <aside>
             <p id="describe">
-                可以在这里简单介绍你自己
+                菜卷消灭大师 daibor 为我特别定制专属文字表达工具
             </p>
         </aside>
-        <p class="tip">现在总共 b 了 {{count}} 条</p>
+        <p class="tip">现在总共「响」了 {{count}} 声</p>
         <section class="item" v-for="item in contents" v-cloak>
             <p v-html='item.attributes.content'></p>
             <time v-bind:datetime="item.attributes.time">{{item.attributes.time}}</time>
@@ -41,7 +41,7 @@
         </div>
     </main>
     <footer>
-        <p class="center-text">Copyright © 2020 daibor,All Rights Reserved</p>
+        <p class="center-text">Copyright © 2020 hibiki,All Rights Reserved</p>
     </footer>
 </body>
 <script src="https://cdn.bootcss.com/vue/2.6.11/vue.min.js"></script>
@@ -83,7 +83,7 @@
     function getData(page = 0) {
         query.descending('createdAt').skip(page * 20).limit(20).find().then(function(results) {
             if (results.length == 0) {
-                alert('之前没 b 过了')
+                alert('之前没响过了')
             } else {
                 let resC = results;
                 reqData = false;
